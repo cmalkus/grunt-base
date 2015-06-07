@@ -1,0 +1,28 @@
+@import 'mixins';
+
+*, *:before, *:after{
+	@include vendor-prefix(box-sizing, 'border-box');
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+.clearfix {
+	zoom: 1;
+
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.fl{float:left;}
+.fr{float:right;}
+.cl{clear:left;}
+.cr{clear:right;}
+.clear{clear: both;}
