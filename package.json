@@ -1,6 +1,6 @@
 {
-  "name": "grunt-test",
-  "description": "Test for Grunt stuff",
+  "name": "grunt-base",
+  "description": "Base Grunt project",
   "version": "0.1.0",
   "license" : "MIT",
   "repository": {
