@@ -9,8 +9,8 @@ module.exports = function(grunt) {
 				banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
 			},
 			build: {
-				src: 'js/*.js',
-				dest: 'js/<%= pkg.name %>.min.js'
+				src: ['js/lib/*.js', 'js/mian.js'],
+				dest: 'js/mian.min.js'
 			}
 		},
 		
@@ -22,6 +22,24 @@ module.exports = function(grunt) {
 				files: {
 					'css/style.css': 'css/style.scss'
 				}
+			}
+		},
+		
+		imagemin: {
+			static: {
+				options: {
+					optimizationLevel: 3,
+					svgoPlugins: [{ removeViewBox: false }]
+				}
+			},
+			
+			dynamic: {
+				files: [{
+					expand: true,
+					cwd: 'images/',
+					src: ['*.{png,jpg,gif}'],
+					dest: 'images/build/'
+		    	}]
 			}
 		},
 		
@@ -38,10 +56,11 @@ module.exports = function(grunt) {
 		}
 	});
 	
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 
-	grunt.registerTask('default', ['uglify, sass']);
+	grunt.registerTask('default', ['uglify', 'sass', 'imagemin']);
 
 };
