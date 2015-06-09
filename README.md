@@ -1,4 +1,4 @@
-G# Grunt base install
+# Grunt base install
 
 This is the base install for a Grunt project. Installed grunt plugins include:
 - grunt-contrib-imagemin
