@@ -26,13 +26,6 @@ module.exports = function(grunt) {
 		},
 		
 		imagemin: {
-			static: {
-				options: {
-					optimizationLevel: 3,
-					svgoPlugins: [{ removeViewBox: false }]
-				}
-			},
-			
 			dynamic: {
 				files: [{
 					expand: true,
