@@ -8,6 +8,6 @@ This is the base install for a grunt project. Installed grunt plugins inclue:
 
 Don't forget to change the project name, description, etc. and run ```sh $ npm install```
 
-Original files can be found at [https://github.com/cmalkus/grunt-test]
+Original files can be found at [https://github.com/cmalkus/grunt-base]
 
-[https://github.com/cmalkus/grunt-test]:https://github.com/cmalkus/grunt-test
+[https://github.com/cmalkus/grunt-test]:https://github.com/cmalkus/grunt-base

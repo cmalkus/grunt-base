@@ -5,10 +5,10 @@
   "license" : "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cmalkus/grunt-test.git"
+    "url": "git://github.com/cmalkus/grunt-base.git"
   },
   "bugs": {
-    "url": "git://github.com/cmalkus/grunt-test/issues"
+    "url": "git://github.com/cmalkus/grunt-base/issues"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
