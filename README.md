@@ -1,6 +1,6 @@
 G# Grunt base install
 
-This is the base install for a grunt project. Installed grunt plugins include:
+This is the base install for a Grunt project. Installed grunt plugins include:
 - grunt-contrib-imagemin
 - grunt-contrib-sass
 - grunt-contrib-uglify
