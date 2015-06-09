@@ -1,9 +1,9 @@
-# Grunt base install
+G# Grunt base install
 
-This is the base install for a grunt project. Installed grunt plugins inclue:
+This is the base install for a grunt project. Installed grunt plugins include:
 - grunt-contrib-imagemin
 - grunt-contrib-sass
-- grunt-contrib-uglyfy
+- grunt-contrib-uglify
 - grunt-contrib-watch
 
 Don't forget to change the project name, description, etc. and run ```$ npm install``` initially, and ```$ grunt watch``` while making edits.
